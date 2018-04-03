@@ -1,0 +1,29 @@
+h1 {
+    font-family: 'Poiret One', cursive;
+}
+
+p, body, input {
+    font-family: 'Raleway', serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-content: center;
+    align-items: center;
+    background-color: beige;
+    text-align: center;
+}
+
+div, input {
+    margin: 10px 0px;
+}
+
+#inputs {
+    visibility: visible;
+}
+
+#progress {
+    visibility: hidden;
+}

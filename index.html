@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sean O'Mahoney">
+    <meta name="title" content="Life Expectancy Bar">
+    <meta name="description" content="This site  was made for fun to show you how long you have left according to the average life span.">
+    <meta name="keywords" content="Life Expectancy Bar">
+
+    <title>Life Expectancy Bar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Poiret+One" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1 id="title">Life Expectancy Bar</h1>
+    
+    <div id="inputs">
+        <p>Please enter your birthday:</p>
+        <div id="selects">
+            D:
+            <select id="day"></select>
+            M:
+            <select id="month"></select>
+            Y:
+            <select id="year"></select>
+        </div>
+        <div>
+            Adjust lifespan if needed:
+            <select id="lifespan"></select>
+        </div>
+        <input type="button" value="Start" id="btn" />
+    </div>
+    
+    <div id="progress">
+        <h2 id="until">Until XXXX</h2>
+        <progress value="0" max="100" id="progressBar"></progress>
+        <p id="p">0%</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
