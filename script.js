@@ -1,7 +1,7 @@
 window.addEventListener('load', function() {
     init();
     showProgress(); 
-    setInterval(showProgress, 100); 
+    setInterval(showProgress, 200); 
 });
 
 const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -36,7 +36,7 @@ function showProgress() {
     var result = oneLinePercentage() * 100;
     document.getElementById("until").innerHTML = "Until " + (parseInt(year) + parseInt(lifespan));
     document.getElementById("progressBar").value = result;
-    document.getElementById("p").innerHTML = result.toString().substr(0,15) + "%";
+    document.getElementById("p").innerHTML = result.toString().substr(0,13) + "%";
     //console.log(result);
 }
 
